@@ -97,7 +97,7 @@ void onesignalPush(char *baslik, char *mesaj){
         char *formyazi = cJSON_PrintUnformatted(form);
 
         struct curl_slist *headerlar = NULL;
-        headerlar = curl_slist_append(headerlar, "Authorization: Basic ONESIGNAL_API_TOKEN");
+        headerlar = curl_slist_append(headerlar, "Authorization: Basic ONESIGNAL_API_KEY");
         headerlar = curl_slist_append(headerlar, "Content-Type: application/json");
         headerlar = curl_slist_append(headerlar, "Accept: application/json");
 
