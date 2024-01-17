@@ -23,8 +23,6 @@ gcc bewegungsmelder.c -o bewegungsmelder -lbcm2835 -lsqlite3 -lcjson -lmicrohttp
 ./bewegungsmelder
 ```
 * Hareket gerçekleştiğinde terminalde bununla ilgili çıktı bulabilirsiniz.
-* Projenin IoT kısmı için bir veritabanı ve bir sunucu uygulama içerisinde halihazırda mevcuttur. <br>
-Bunları işleyebilecek bir arayüz oluşturarak bu bilgilere(hareket geçmişi, anlık hareket durumu) internet üzerinden ulaşabilirsiniz.
-* Projede ayrıca OneSignal REST API entegrasyonu mevcuttur. OneSignal bilgilerinizi(```ONESIGNAL_API_KEY``` ve ```ONESIGNAL_APP_ID```) <br>
-uygulamaya girerek hareket oluşması durumunda bildirim alıp anında haberdar olabilirsiniz. 
+* Projenin IoT kısmı için bir veritabanı ve bir sunucu uygulama içerisinde halihazırda mevcuttur. Veritabanındaki bilgileri işleyebilecek bir arayüz oluşturarak bu bilgilere(hareket geçmişi, anlık hareket durumu) uygulamadaki sunucu aracılığıyla internet üzerinden ulaşabilirsiniz. 
+* Projede ayrıca OneSignal REST API entegrasyonu mevcuttur. OneSignal bilgilerinizi(```ONESIGNAL_API_KEY``` ve ```ONESIGNAL_APP_ID```) uygulamaya girerek hareket oluşması durumunda bildirim alıp anında haberdar olabilirsiniz. 
 
